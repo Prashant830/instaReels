@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blackColor"
+        android:id="@+id/home_activity"
+        tools:context=".ui.activity.HomeActivity">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottomNavigationHeight"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            app:elevation="20dp"
+            app:itemIconSize="20dp"
+            android:layout_alignParentBottom="true"
+            app:itemIconTint="@android:color/white"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/menu_bottom_home" />
+
+        <FrameLayout
+            android:id="@+id/homeContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionBarSize"
+                android:layout_marginTop="@dimen/margin20dp"
+                android:background="@android:color/transparent"
+                android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+</layout>
